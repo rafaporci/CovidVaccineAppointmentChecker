@@ -1,0 +1,45 @@
+﻿{
+  "id": 3,
+  "nome": "SECRETARIA DA SAÚDE",
+  "sigla": "SES",
+  "setores": [
+    {
+      "id": 49,
+      "nome": "UBS Éden - Vacinação COVID-19",
+      "observacao": "<p>A Secretaria da Saúde, por meio da Vigilância em Saúde, está oferecendo vacinação contra a COVID-19 para os profissionais da saúde relacionados nas categorias abaixo, priorizadas para esta etapa de vacinação: </p>\r\n\r\n<ul>\r\n<li>Assistente social;</li>\r\n<li>Biólogo;</li>\r\n<li>Biomédico;</li>\r\n<li>Cirurgião dentista;</li>\r\n<li>Cozinheiro e auxiliares;</li>\r\n<li>Enfermeiro, técnico ou auxiliar de enfermagem;</li>\r\n<li>Farmacêutico;</li>\r\n<li>Fisioterapeuta;</li>\r\n<li>Fonoaudiólogo;</li>\r\n<li>Médico;</li>\r\n<li>Médico veterinário e seus respectivos técnicos e auxiliares;</li>\r\n<li>Motorista de ambulância;</li>\r\n<li>Nutricionista;</li>\r\n<li>Odontólogo;</li>\r\n<li>Pessoal da limpeza;</li>\r\n<li>Psicólogo;</li>\r\n<li>Profissional da Educação Física;</li>\r\n<li>Recepcionista;</li>\r\n<li>Segurança;</li>\r\n<li>Sepultador;</li>\r\n<li>Técnico em laboratório de análises clínicas;</li>\r\n<li>Terapeuta Ocupacional;</li>\r\n<li>Outros que trabalham nos serviços de saúde (especificar).</li>\r\n\r\n</ul>\r\n<br>\r\n<b>Atenção: deverá ser comprovada atividade profissional em estabelecimento de saúde.</b>\r\n<br>\r\n<br>\r\n<b>Caso haja omissão de fato ou prestação de informações não verdadeiras o cidadão responderá civil e criminalmente.</b>",
+      "datas": []
+    },
+    {
+      "id": 51,
+      "nome": "UBS Maria do Carmo - Vacinação COVID-19",
+      "observacao": "<p>A Secretaria da Saúde, por meio da Vigilância em Saúde, está oferecendo vacinação contra a COVID-19 para os profissionais da saúde relacionados nas categorias abaixo, priorizadas para esta etapa de vacinação: </p>\r\n\r\n<ul>\r\n<li>Assistente social;</li>\r\n<li>Biólogo;</li>\r\n<li>Biomédico;</li>\r\n<li>Cirurgião dentista;</li>\r\n<li>Cozinheiro e auxiliares;</li>\r\n<li>Enfermeiro, técnico ou auxiliar de enfermagem;</li>\r\n<li>Farmacêutico;</li>\r\n<li>Fisioterapeuta;</li>\r\n<li>Fonoaudiólogo;</li>\r\n<li>Médico;</li>\r\n<li>Médico veterinário e seus respectivos técnicos e auxiliares;</li>\r\n<li>Motorista de ambulância;</li>\r\n<li>Nutricionista;</li>\r\n<li>Odontólogo;</li>\r\n<li>Pessoal da limpeza;</li>\r\n<li>Psicólogo;</li>\r\n<li>Profissional da Educação Física;</li>\r\n<li>Recepcionista;</li>\r\n<li>Segurança;</li>\r\n<li>Sepultador;</li>\r\n<li>Técnico em laboratório de análises clínicas;</li>\r\n<li>Terapeuta Ocupacional;</li>\r\n<li>Outros que trabalham nos serviços de saúde (especificar).</li>\r\n\r\n</ul>\r\n<br>\r\n<b>Atenção: deverá ser comprovada atividade profissional em estabelecimento de saúde.</b>\r\n<br>\r\n<br>\r\n<b>Caso haja omissão de fato ou prestação de informações não verdadeiras o cidadão responderá civil e criminalmente.</b>",
+      "datas": []
+    },
+    {
+      "id": 52,
+      "nome": "USF São Bento - Vacinação COVID-19",
+      "observacao": "<p>A Secretaria da Saúde, por meio da Vigilância em Saúde, está oferecendo vacinação contra a COVID-19 para os profissionais da saúde relacionados nas categorias abaixo, priorizadas para esta etapa de vacinação: </p>\r\n\r\n<ul>\r\n<li>Assistente social;</li>\r\n<li>Biólogo;</li>\r\n<li>Biomédico;</li>\r\n<li>Cirurgião dentista;</li>\r\n<li>Cozinheiro e auxiliares;</li>\r\n<li>Enfermeiro, técnico ou auxiliar de enfermagem;</li>\r\n<li>Farmacêutico;</li>\r\n<li>Fisioterapeuta;</li>\r\n<li>Fonoaudiólogo;</li>\r\n<li>Médico;</li>\r\n<li>Médico veterinário e seus respectivos técnicos e auxiliares;</li>\r\n<li>Motorista de ambulância;</li>\r\n<li>Nutricionista;</li>\r\n<li>Odontólogo;</li>\r\n<li>Pessoal da limpeza;</li>\r\n<li>Psicólogo;</li>\r\n<li>Profissional da Educação Física;</li>\r\n<li>Recepcionista;</li>\r\n<li>Segurança;</li>\r\n<li>Sepultador;</li>\r\n<li>Técnico em laboratório de análises clínicas;</li>\r\n<li>Terapeuta Ocupacional;</li>\r\n<li>Outros que trabalham nos serviços de saúde (especificar).</li>\r\n\r\n</ul>\r\n<br>\r\n<b>Atenção: deverá ser comprovada atividade profissional em estabelecimento de saúde.</b>\r\n<br>\r\n<br>\r\n<b>Caso haja omissão de fato ou prestação de informações não verdadeiras o cidadão responderá civil e criminalmente.</b>",
+      "datas": [
+        "2020-01-01"
+      ]
+    },
+    {
+      "id": 53,
+      "nome": "UBS Sorocaba I - Vacinação COVID-19",
+      "observacao": "<p>A Secretaria da Saúde, por meio da Vigilância em Saúde, está oferecendo vacinação contra a COVID-19 para os profissionais da saúde relacionados nas categorias abaixo, priorizadas para esta etapa de vacinação: </p>\r\n\r\n<ul>\r\n<li>Assistente social;</li>\r\n<li>Biólogo;</li>\r\n<li>Biomédico;</li>\r\n<li>Cirurgião dentista;</li>\r\n<li>Cozinheiro e auxiliares;</li>\r\n<li>Enfermeiro, técnico ou auxiliar de enfermagem;</li>\r\n<li>Farmacêutico;</li>\r\n<li>Fisioterapeuta;</li>\r\n<li>Fonoaudiólogo;</li>\r\n<li>Médico;</li>\r\n<li>Médico veterinário e seus respectivos técnicos e auxiliares;</li>\r\n<li>Motorista de ambulância;</li>\r\n<li>Nutricionista;</li>\r\n<li>Odontólogo;</li>\r\n<li>Pessoal da limpeza;</li>\r\n<li>Psicólogo;</li>\r\n<li>Profissional da Educação Física;</li>\r\n<li>Recepcionista;</li>\r\n<li>Segurança;</li>\r\n<li>Sepultador;</li>\r\n<li>Técnico em laboratório de análises clínicas;</li>\r\n<li>Terapeuta Ocupacional;</li>\r\n<li>Outros que trabalham nos serviços de saúde (especificar).</li>\r\n\r\n</ul>\r\n<br>\r\n<b>Atenção: deverá ser comprovada atividade profissional em estabelecimento de saúde.</b>\r\n<br>\r\n<br>\r\n<b>Caso haja omissão de fato ou prestação de informações não verdadeiras o cidadão responderá civil e criminalmente.</b>",
+      "datas": []
+    },
+    {
+      "id": 54,
+      "nome": "USF Paineiras - Vacinação COVID-19",
+      "observacao": "<p>A Secretaria da Saúde, por meio da Vigilância em Saúde, está oferecendo vacinação contra a COVID-19 para os profissionais da saúde relacionados nas categorias abaixo, priorizadas para esta etapa de vacinação: </p>\r\n\r\n<ul>\r\n<li>Assistente social;</li>\r\n<li>Biólogo;</li>\r\n<li>Biomédico;</li>\r\n<li>Cirurgião dentista;</li>\r\n<li>Cozinheiro e auxiliares;</li>\r\n<li>Enfermeiro, técnico ou auxiliar de enfermagem;</li>\r\n<li>Farmacêutico;</li>\r\n<li>Fisioterapeuta;</li>\r\n<li>Fonoaudiólogo;</li>\r\n<li>Médico;</li>\r\n<li>Médico veterinário e seus respectivos técnicos e auxiliares;</li>\r\n<li>Motorista de ambulância;</li>\r\n<li>Nutricionista;</li>\r\n<li>Odontólogo;</li>\r\n<li>Pessoal da limpeza;</li>\r\n<li>Psicólogo;</li>\r\n<li>Profissional da Educação Física;</li>\r\n<li>Recepcionista;</li>\r\n<li>Segurança;</li>\r\n<li>Sepultador;</li>\r\n<li>Técnico em laboratório de análises clínicas;</li>\r\n<li>Terapeuta Ocupacional;</li>\r\n<li>Outros que trabalham nos serviços de saúde (especificar).</li>\r\n\r\n</ul>\r\n<br>\r\n<b>Atenção: deverá ser comprovada atividade profissional em estabelecimento de saúde.</b>\r\n<br>\r\n<br>\r\n<b>Caso haja omissão de fato ou prestação de informações não verdadeiras o cidadão responderá civil e criminalmente.</b>",
+      "datas": []
+    },
+    {
+      "id": 62,
+      "nome": "Drive Thru - Instituto Humberto de Campos",
+      "observacao": "<p>A Secretaria da Saúde, por meio da Vigilância em Saúde, está oferecendo vacinação contra a COVID-19 para IDOSOS a partir de 80 anos de idade.</p> <br> ATENÇÃO:<br>A Imunização não poderá ser realizada em pessoas que tiveram COVID-19 em tempo menor a 28 dias.<br>No momento da imunização, deverá ser apresentado ao aplicador o Protocolo de Agendamento, o tutorial para gerar o protocolo pode ser visualizado acessando <a target=\"_blank\" href=\"https://youtu.be/lOue92oqyfc\">https://youtu.be/lOue92oqyfc</a> <br>  <br>  <b>Caso haja omissão de fato ou prestação de informações não verdadeiras o cidadão responderá civil e criminalmente.</b>",
+      "datas": []
+    }
+  ]
+}

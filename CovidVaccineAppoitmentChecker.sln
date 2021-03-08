@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidVaccineAppoitmentChecker", "CovidVaccineAppoitmentChecker\CovidVaccineAppoitmentChecker.csproj", "{4457D8E8-0A92-4C35-A7F1-3E037EA2C931}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidVaccineAppoitmentChecker.Data.Services", "CovidVaccineAppoitmentChecker.Data.Services\CovidVaccineAppoitmentChecker.Data.Services.csproj", "{1C406B74-BA49-4352-865A-DDEF87297A0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidVaccineAppoitmentChecker.Model", "CovidVaccineAppoitmentChecker.Model\CovidVaccineAppoitmentChecker.Model.csproj", "{87764560-DBC8-427C-BDCA-54B7592C704C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Data", "2-Data", "{96B6AE7E-0B4B-457D-8C9B-51A320D3A8E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-UI", "0-UI", "{28167B94-66F2-4A25-8BCB-227440C9A6D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Model", "3-Model", "{C4390DDD-98AE-4A4D-A35B-FF3102A3A805}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Core", "2-Core", "{21094E98-FC50-4806-B0DA-07E45E46FCEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidVaccineAppoitmentChecker.Data.Services.Tests", "CovidVaccineAppoitmentChecker.Data.ServicesTests\CovidVaccineAppoitmentChecker.Data.Services.Tests.csproj", "{29FE3DC7-9679-4C90-8A64-18B2B65588A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidVaccineAppoitmentChecker.Core.Services", "CovidVaccineAppoitmentChecker.Core.Services\CovidVaccineAppoitmentChecker.Core.Services.csproj", "{0E1AFBE3-F47E-471C-AF85-D5ABCF57BEE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidVaccineAppoitmentChecker.Core.Services.Tests", "CovidVaccineAppoitmentChecker.Core.ServicesTests\CovidVaccineAppoitmentChecker.Core.Services.Tests.csproj", "{EE347F85-BF9D-4B38-9686-00F828797120}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4457D8E8-0A92-4C35-A7F1-3E037EA2C931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4457D8E8-0A92-4C35-A7F1-3E037EA2C931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4457D8E8-0A92-4C35-A7F1-3E037EA2C931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4457D8E8-0A92-4C35-A7F1-3E037EA2C931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C406B74-BA49-4352-865A-DDEF87297A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C406B74-BA49-4352-865A-DDEF87297A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C406B74-BA49-4352-865A-DDEF87297A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C406B74-BA49-4352-865A-DDEF87297A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87764560-DBC8-427C-BDCA-54B7592C704C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87764560-DBC8-427C-BDCA-54B7592C704C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87764560-DBC8-427C-BDCA-54B7592C704C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87764560-DBC8-427C-BDCA-54B7592C704C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29FE3DC7-9679-4C90-8A64-18B2B65588A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29FE3DC7-9679-4C90-8A64-18B2B65588A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29FE3DC7-9679-4C90-8A64-18B2B65588A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29FE3DC7-9679-4C90-8A64-18B2B65588A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E1AFBE3-F47E-471C-AF85-D5ABCF57BEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E1AFBE3-F47E-471C-AF85-D5ABCF57BEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E1AFBE3-F47E-471C-AF85-D5ABCF57BEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E1AFBE3-F47E-471C-AF85-D5ABCF57BEE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE347F85-BF9D-4B38-9686-00F828797120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE347F85-BF9D-4B38-9686-00F828797120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE347F85-BF9D-4B38-9686-00F828797120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE347F85-BF9D-4B38-9686-00F828797120}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4457D8E8-0A92-4C35-A7F1-3E037EA2C931} = {28167B94-66F2-4A25-8BCB-227440C9A6D9}
+		{1C406B74-BA49-4352-865A-DDEF87297A0D} = {96B6AE7E-0B4B-457D-8C9B-51A320D3A8E8}
+		{87764560-DBC8-427C-BDCA-54B7592C704C} = {C4390DDD-98AE-4A4D-A35B-FF3102A3A805}
+		{29FE3DC7-9679-4C90-8A64-18B2B65588A7} = {96B6AE7E-0B4B-457D-8C9B-51A320D3A8E8}
+		{0E1AFBE3-F47E-471C-AF85-D5ABCF57BEE9} = {21094E98-FC50-4806-B0DA-07E45E46FCEF}
+		{EE347F85-BF9D-4B38-9686-00F828797120} = {21094E98-FC50-4806-B0DA-07E45E46FCEF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BF453A4-784D-4BFC-988C-1012B369294A}
+	EndGlobalSection
+EndGlobal
