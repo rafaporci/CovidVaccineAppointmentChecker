@@ -1,6 +1,6 @@
 ﻿
-using CovidVaccineAppoitmentChecker.Data.Services;
-using CovidVaccineAppoitmentChecker.Model;
+using CovidVaccineAppointmentChecker.Data.Services;
+using CovidVaccineAppointmentChecker.Model;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -8,15 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CovidVaccineAppoitmentChecker.Core.Services.Implementations
+namespace CovidVaccineAppointmentChecker.Core.Services.Implementations
 {
-    public class AppoitmentCheckerService : IAppoitmentCheckerService
+    public class AppointmentCheckerService : IAppointmentCheckerService
     {
-        private readonly ISorocabaAppoitmentsGateway _sorocabaAppoitmentsGateway;
+        private readonly ISorocabaAppointmentsGateway _sorocabaAppoitmentsGateway;
         private readonly IEmailService _emailService;
         private readonly ILogger _logger;
         
-        public AppoitmentCheckerService(ISorocabaAppoitmentsGateway sorocabaAppoitmentsGateway, IEmailService emailService, ILogger<AppoitmentCheckerService> logger)
+        public AppointmentCheckerService(ISorocabaAppointmentsGateway sorocabaAppoitmentsGateway, IEmailService emailService, ILogger<AppointmentCheckerService> logger)
         {
             this._sorocabaAppoitmentsGateway = sorocabaAppoitmentsGateway;
             this._emailService = emailService;
@@ -33,7 +33,7 @@ namespace CovidVaccineAppoitmentChecker.Core.Services.Implementations
             }
         }
 
-        private bool SendResumeEmail(IEnumerable<SorocabaAppoitmentOffice> offices)
+        private bool SendResumeEmail(IEnumerable<SorocabaAppointmentOffice> offices)
         {
             try
             {
@@ -48,7 +48,7 @@ namespace CovidVaccineAppoitmentChecker.Core.Services.Implementations
             return false;
         }
 
-        private string GenerateEmailBody(IEnumerable<SorocabaAppoitmentOffice> offices)
+        private string GenerateEmailBody(IEnumerable<SorocabaAppointmentOffice> offices)
         {
             StringBuilder stb = new StringBuilder();
 

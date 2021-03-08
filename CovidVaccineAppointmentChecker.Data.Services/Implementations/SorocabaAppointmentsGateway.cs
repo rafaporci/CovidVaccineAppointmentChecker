@@ -1,4 +1,4 @@
-﻿using CovidVaccineAppoitmentChecker.Model;
+﻿using CovidVaccineAppointmentChecker.Model;
 using GuardNet;
 using Newtonsoft.Json;
 using System.Collections.Generic;
@@ -6,18 +6,18 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace CovidVaccineAppoitmentChecker.Data.Services.Implementations
+namespace CovidVaccineAppointmentChecker.Data.Services.Implementations
 {
-    public class SorocabaAppoitmentsGateway : ISorocabaAppoitmentsGateway
+    public class SorocabaAppointmentsGateway : ISorocabaAppointmentsGateway
     {
         private readonly HttpClient _httpClient;
 
-        public SorocabaAppoitmentsGateway(HttpClient httpClient)
+        public SorocabaAppointmentsGateway(HttpClient httpClient)
         {
             this._httpClient = httpClient;
         }
 
-        public async Task<IEnumerable<SorocabaAppoitmentOffice>> GetAppoitmentOffices()
+        public async Task<IEnumerable<SorocabaAppointmentOffice>> GetAppoitmentOffices()
         {
             var rawResponse = await this._httpClient.GetStringAsync("https://servicos.sorocaba.sp.gov.br/agenda_servicos/api/unidade/3/agenda/");
 
@@ -25,7 +25,7 @@ namespace CovidVaccineAppoitmentChecker.Data.Services.Implementations
 
             Agenda agenda = JsonConvert.DeserializeObject<Agenda>(rawResponse);
 
-            return agenda.setores.Select(a => new SorocabaAppoitmentOffice(a.nome, a.datas));
+            return agenda.setores.Select(a => new SorocabaAppointmentOffice(a.nome, a.datas));
         }
 
         public class Setor

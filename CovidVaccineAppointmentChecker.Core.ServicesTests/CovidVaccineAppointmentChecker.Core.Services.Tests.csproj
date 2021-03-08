@@ -5,9 +5,9 @@
 
     <IsPackable>false</IsPackable>
 
-    <AssemblyName>CovidVaccineAppoitmentChecker.Core.Services.Tests</AssemblyName>
+    <AssemblyName>CovidVaccineAppointmentChecker.Core.Services.Tests</AssemblyName>
 
-    <RootNamespace>CovidVaccineAppoitmentChecker.Core.Services.Tests</RootNamespace>
+    <RootNamespace>CovidVaccineAppointmentChecker.Core.Services.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CovidVaccineAppoitmentChecker.Core.Services\CovidVaccineAppoitmentChecker.Core.Services.csproj" />
+    <ProjectReference Include="..\CovidVaccineAppointmentChecker.Core.Services\CovidVaccineAppointmentChecker.Core.Services.csproj" />
   </ItemGroup>
 
 </Project>

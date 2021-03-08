@@ -1,13 +1,13 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace CovidVaccineAppoitmentChecker.Core.Services.Extentions
+namespace CovidVaccineAppointmentChecker.Core.Services.Extentions
 {
     public static class CoreServicesRegister
     {
         public static IServiceCollection RegisterCoreServices(this IServiceCollection serviceCollection)
         {
             return serviceCollection
-                .AddTransient<IAppoitmentCheckerService, Implementations.AppoitmentCheckerService>()
+                .AddTransient<IAppointmentCheckerService, Implementations.AppointmentCheckerService>()
                 .AddTransient<IEmailService, Implementations.EmailService>();
         }
     }

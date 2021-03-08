@@ -2,13 +2,13 @@
 using System.Linq;
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("CovidVaccineAppoitmentChecker.Core.Services.Tests")]
-[assembly: InternalsVisibleTo("CovidVaccineAppoitmentChecker.Data.Services.Tests")]
-namespace CovidVaccineAppoitmentChecker.Model
+[assembly: InternalsVisibleTo("CovidVaccineAppointmentChecker.Core.Services.Tests")]
+[assembly: InternalsVisibleTo("CovidVaccineAppointmentChecker.Data.Services.Tests")]
+namespace CovidVaccineAppointmentChecker.Model
 {
-    public class SorocabaAppoitmentOffice
+    public class SorocabaAppointmentOffice
     {
-        public SorocabaAppoitmentOffice(string name, IEnumerable<string> availbleDates)
+        public SorocabaAppointmentOffice(string name, IEnumerable<string> availbleDates)
         {
             this.AvailbleDates = availbleDates;
             this.Name = name;

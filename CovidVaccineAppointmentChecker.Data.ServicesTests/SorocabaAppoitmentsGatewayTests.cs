@@ -1,5 +1,5 @@
-﻿using CovidVaccineAppoitmentChecker.Data.Services.Implementations;
-using CovidVaccineAppoitmentChecker.Model;
+﻿using CovidVaccineAppointmentChecker.Data.Services.Implementations;
+using CovidVaccineAppointmentChecker.Model;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
@@ -13,7 +13,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CovidVaccineAppoitmentChecker.Data.Services.Tests
+namespace CovidVaccineAppointmentChecker.Data.Services.Tests
 {
     [TestClass()]
     public class SorocabaAppoitmentsGatewayTests
@@ -23,7 +23,7 @@ namespace CovidVaccineAppoitmentChecker.Data.Services.Tests
         {
             // Arrange
             var httpClientMock = this.BuildHttpClientMock("sorocabaAgendaOfficesWithoutDates.json");
-            var target = new SorocabaAppoitmentsGateway(httpClientMock);
+            var target = new SorocabaAppointmentsGateway(httpClientMock);
             var expected = BuildSorocabaOfficesList();
 
             // Act
@@ -38,7 +38,7 @@ namespace CovidVaccineAppoitmentChecker.Data.Services.Tests
         {
             // Arrange
             var httpClientMock = this.BuildHttpClientMock("sorocabaAgendaOfficesAndSaoBentoWithDates.json");
-            var target = new SorocabaAppoitmentsGateway(httpClientMock);
+            var target = new SorocabaAppointmentsGateway(httpClientMock);
             var expected = BuildSorocabaOfficesList();
 
             expected.FirstOrDefault(a => a.Name == "USF São Bento - Vacinação COVID-19").AvailbleDates = new List<string>() { "2020-01-01" };
@@ -50,16 +50,16 @@ namespace CovidVaccineAppoitmentChecker.Data.Services.Tests
             result.Should().BeEquivalentTo(expected);
         }
 
-        private List<SorocabaAppoitmentOffice> BuildSorocabaOfficesList()
+        private List<SorocabaAppointmentOffice> BuildSorocabaOfficesList()
         {
-            var list = new List<SorocabaAppoitmentOffice>();
+            var list = new List<SorocabaAppointmentOffice>();
 
-            list.Add(new SorocabaAppoitmentOffice("UBS Éden - Vacinação COVID-19", Enumerable.Empty<string>()));
-            list.Add(new SorocabaAppoitmentOffice("UBS Maria do Carmo - Vacinação COVID-19", Enumerable.Empty<string>()));
-            list.Add(new SorocabaAppoitmentOffice("USF São Bento - Vacinação COVID-19", Enumerable.Empty<string>()));
-            list.Add(new SorocabaAppoitmentOffice("USF Paineiras - Vacinação COVID-19", Enumerable.Empty<string>()));
-            list.Add(new SorocabaAppoitmentOffice("UBS Sorocaba I - Vacinação COVID-19", Enumerable.Empty<string>()));
-            list.Add(new SorocabaAppoitmentOffice("Drive Thru - Instituto Humberto de Campos", Enumerable.Empty<string>()));
+            list.Add(new SorocabaAppointmentOffice("UBS Éden - Vacinação COVID-19", Enumerable.Empty<string>()));
+            list.Add(new SorocabaAppointmentOffice("UBS Maria do Carmo - Vacinação COVID-19", Enumerable.Empty<string>()));
+            list.Add(new SorocabaAppointmentOffice("USF São Bento - Vacinação COVID-19", Enumerable.Empty<string>()));
+            list.Add(new SorocabaAppointmentOffice("USF Paineiras - Vacinação COVID-19", Enumerable.Empty<string>()));
+            list.Add(new SorocabaAppointmentOffice("UBS Sorocaba I - Vacinação COVID-19", Enumerable.Empty<string>()));
+            list.Add(new SorocabaAppointmentOffice("Drive Thru - Instituto Humberto de Campos", Enumerable.Empty<string>()));
 
             return list;
         }
@@ -88,7 +88,7 @@ namespace CovidVaccineAppoitmentChecker.Data.Services.Tests
 
         private string ReadResource(string resourceName)
         {
-            Stream resource = typeof(SorocabaAppoitmentsGatewayTests).Assembly.GetManifestResourceStream($"CovidVaccineAppoitmentChecker.Data.Services.Tests.Resources.{resourceName}");
+            Stream resource = typeof(SorocabaAppoitmentsGatewayTests).Assembly.GetManifestResourceStream($"CovidVaccineAppointmentChecker.Data.Services.Tests.Resources.{resourceName}");
             return new StreamReader(resource, Encoding.UTF8).ReadToEnd();
         }
     }

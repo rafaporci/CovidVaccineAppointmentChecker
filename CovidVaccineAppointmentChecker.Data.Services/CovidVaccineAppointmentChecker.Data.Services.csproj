@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CovidVaccineAppoitmentChecker.Model\CovidVaccineAppoitmentChecker.Model.csproj" />
+    <ProjectReference Include="..\CovidVaccineAppointmentChecker.Model\CovidVaccineAppointmentChecker.Model.csproj" />
   </ItemGroup>
 
 </Project>

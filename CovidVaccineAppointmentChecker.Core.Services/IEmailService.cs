@@ -1,4 +1,4 @@
-﻿namespace CovidVaccineAppoitmentChecker.Core.Services
+﻿namespace CovidVaccineAppointmentChecker.Core.Services
 {
     public interface IEmailService
     {

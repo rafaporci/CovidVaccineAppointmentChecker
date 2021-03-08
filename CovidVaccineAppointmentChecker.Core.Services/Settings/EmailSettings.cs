@@ -1,4 +1,4 @@
-﻿namespace CovidVaccineAppoitmentChecker.Settings
+﻿namespace CovidVaccineAppointmentChecker.Settings
 {
     public class EmailSettings
     {

@@ -1,6 +1,6 @@
-﻿using CovidVaccineAppoitmentChecker.Core.Services.Implementations;
-using CovidVaccineAppoitmentChecker.Data.Services;
-using CovidVaccineAppoitmentChecker.Model;
+﻿using CovidVaccineAppointmentChecker.Core.Services.Implementations;
+using CovidVaccineAppointmentChecker.Data.Services;
+using CovidVaccineAppointmentChecker.Model;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
@@ -10,10 +10,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CovidVaccineAppoitmentChecker.Core.Services.Tests
+namespace CovidVaccineAppointmentChecker.Core.Services.Tests
 {
     [TestClass()]
-    public class AppoitmentCheckerServiceTests
+    public class AppointmentCheckerServiceTests
     {
         [TestMethod()]
         public async Task AllOfficesWithoutAvaibleDatesTest()
@@ -21,7 +21,7 @@ namespace CovidVaccineAppoitmentChecker.Core.Services.Tests
             // Arrange
             var sorocabaAppoitmentsGatewayMock = BuildSorocabaAppoitmentsGatewayMock(BuildSorocabaOfficesList());
             var emailServiceMock = BuildEmailServiceMock();
-            var target = new AppoitmentCheckerService(sorocabaAppoitmentsGatewayMock, emailServiceMock.Object, Mock.Of<ILogger>());
+            var target = new AppointmentCheckerService(sorocabaAppoitmentsGatewayMock, emailServiceMock.Object, Mock.Of<ILogger<AppointmentCheckerService>>());
             var expected = ReadResource("sorocabaAgendaOfficesWithoutDates.html");
 
             // Act
@@ -39,7 +39,7 @@ namespace CovidVaccineAppoitmentChecker.Core.Services.Tests
             offices.FirstOrDefault(a => a.Name == "USF São Bento - Vacinação COVID-19").AvailbleDates = new List<string>() { "2020-01-01" };
             var sorocabaAppoitmentsGatewayMock = BuildSorocabaAppoitmentsGatewayMock(offices);
             var emailServiceMock = BuildEmailServiceMock();
-            var target = new AppoitmentCheckerService(sorocabaAppoitmentsGatewayMock, emailServiceMock.Object, Mock.Of<ILogger>());
+            var target = new AppointmentCheckerService(sorocabaAppoitmentsGatewayMock, emailServiceMock.Object, Mock.Of<ILogger<AppointmentCheckerService>>());
             var expected = ReadResource("sorocabaAgendaOfficesAndSaoBentoWithDates.html");
             
             // Act
@@ -49,23 +49,23 @@ namespace CovidVaccineAppoitmentChecker.Core.Services.Tests
             emailServiceMock.Verify(a => a.Send(It.IsAny<string>(), It.Is<string>(m => m == expected)), Times.Once);
         }
 
-        private List<SorocabaAppoitmentOffice> BuildSorocabaOfficesList()
+        private List<SorocabaAppointmentOffice> BuildSorocabaOfficesList()
         {
-            var list = new List<SorocabaAppoitmentOffice>();
+            var list = new List<SorocabaAppointmentOffice>();
 
-            list.Add(new SorocabaAppoitmentOffice("UBS Éden - Vacinação COVID-19", Enumerable.Empty<string>()));
-            list.Add(new SorocabaAppoitmentOffice("UBS Maria do Carmo - Vacinação COVID-19", Enumerable.Empty<string>()));
-            list.Add(new SorocabaAppoitmentOffice("USF São Bento - Vacinação COVID-19", Enumerable.Empty<string>()));
-            list.Add(new SorocabaAppoitmentOffice("USF Paineiras - Vacinação COVID-19", Enumerable.Empty<string>()));
-            list.Add(new SorocabaAppoitmentOffice("UBS Sorocaba I - Vacinação COVID-19", Enumerable.Empty<string>()));
-            list.Add(new SorocabaAppoitmentOffice("Drive Thru - Instituto Humberto de Campos", Enumerable.Empty<string>()));
+            list.Add(new SorocabaAppointmentOffice("UBS Éden - Vacinação COVID-19", Enumerable.Empty<string>()));
+            list.Add(new SorocabaAppointmentOffice("UBS Maria do Carmo - Vacinação COVID-19", Enumerable.Empty<string>()));
+            list.Add(new SorocabaAppointmentOffice("USF São Bento - Vacinação COVID-19", Enumerable.Empty<string>()));
+            list.Add(new SorocabaAppointmentOffice("USF Paineiras - Vacinação COVID-19", Enumerable.Empty<string>()));
+            list.Add(new SorocabaAppointmentOffice("UBS Sorocaba I - Vacinação COVID-19", Enumerable.Empty<string>()));
+            list.Add(new SorocabaAppointmentOffice("Drive Thru - Instituto Humberto de Campos", Enumerable.Empty<string>()));
 
             return list;
         }
 
-        private ISorocabaAppoitmentsGateway BuildSorocabaAppoitmentsGatewayMock(IEnumerable<SorocabaAppoitmentOffice> offices)
+        private ISorocabaAppointmentsGateway BuildSorocabaAppoitmentsGatewayMock(IEnumerable<SorocabaAppointmentOffice> offices)
         {
-            var gatewayMock = new Mock<ISorocabaAppoitmentsGateway>();
+            var gatewayMock = new Mock<ISorocabaAppointmentsGateway>();
             gatewayMock.Setup(a => a.GetAppoitmentOffices()).ReturnsAsync(offices);
             return gatewayMock.Object;
         }
@@ -79,7 +79,7 @@ namespace CovidVaccineAppoitmentChecker.Core.Services.Tests
 
         private string ReadResource(string resourceName)
         {
-            Stream resource = typeof(AppoitmentCheckerServiceTests).Assembly.GetManifestResourceStream($"CovidVaccineAppoitmentChecker.Core.Services.Tests.Resources.{resourceName}");
+            Stream resource = typeof(AppointmentCheckerServiceTests).Assembly.GetManifestResourceStream($"CovidVaccineAppointmentChecker.Core.Services.Tests.Resources.{resourceName}");
             return new StreamReader(resource, Encoding.UTF8).ReadToEnd();
         }
     }

@@ -1,9 +1,9 @@
-﻿using CovidVaccineAppoitmentChecker.Settings;
+﻿using CovidVaccineAppointmentChecker.Settings;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Net.Mail;
 
-namespace CovidVaccineAppoitmentChecker.Core.Services.Implementations
+namespace CovidVaccineAppointmentChecker.Core.Services.Implementations
 {
     public class EmailService : IEmailService
     {

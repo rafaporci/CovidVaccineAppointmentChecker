@@ -1,7 +1,7 @@
-﻿using CovidVaccineAppoitmentChecker.Core.Services;
-using CovidVaccineAppoitmentChecker.Core.Services.Extentions;
-using CovidVaccineAppoitmentChecker.Data.Services.Extentions;
-using CovidVaccineAppoitmentChecker.Settings;
+﻿using CovidVaccineAppointmentChecker.Core.Services;
+using CovidVaccineAppointmentChecker.Core.Services.Extentions;
+using CovidVaccineAppointmentChecker.Data.Services.Extentions;
+using CovidVaccineAppointmentChecker.Settings;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -13,7 +13,7 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Mail;
 
-namespace CovidVaccineAppoitmentChecker
+namespace CovidVaccineAppointmentChecker
 {
     class Program
     {
@@ -29,7 +29,7 @@ namespace CovidVaccineAppoitmentChecker
 
                 using (serviceProvider)
                 {
-                    serviceProvider.GetRequiredService<IAppoitmentCheckerService>().SendAvailbleDatesInSorocabaReport().Wait();
+                    serviceProvider.GetRequiredService<IAppointmentCheckerService>().SendAvailbleDatesInSorocabaReport().Wait();
                 }
 
                 return 0;

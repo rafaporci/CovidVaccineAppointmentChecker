@@ -18,8 +18,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\CovidVaccineAppoitmentChecker.Core.Services\CovidVaccineAppoitmentChecker.Core.Services.csproj" />
-	  <ProjectReference Include="..\CovidVaccineAppoitmentChecker.Data.Services\CovidVaccineAppoitmentChecker.Data.Services.csproj" />
+	  <ProjectReference Include="..\CovidVaccineAppointmentChecker.Core.Services\CovidVaccineAppointmentChecker.Core.Services.csproj" />
+	  <ProjectReference Include="..\CovidVaccineAppointmentChecker.Data.Services\CovidVaccineAppointmentChecker.Data.Services.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
